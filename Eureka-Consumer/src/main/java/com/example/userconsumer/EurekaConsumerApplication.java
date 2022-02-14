@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.userconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +16,9 @@ public class EurekaConsumerApplication {
 	@Bean
 	@LoadBalanced
 	RestTemplate getRestTemplate() {
-		return new RestTemplate();
+		RestTemplate restTemplate = new RestTemplate();
+		restTemplate.getInterceptors().add(new LoggingClientHttpRequestInterceptor());
+		return restTemplate;
 	}
 
 

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.userconsumer;
 
 
 import com.netflix.discovery.EurekaClient;

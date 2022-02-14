@@ -18,6 +18,9 @@
         <module>Eureka-Server</module>
         <module>Eureka-Provider</module>
         <module>Eureka-Consumer</module>
+        <module>User-Provider</module>
+        <module>User-Consumer</module>
+        <module>User-Api</module>
     </modules>
 
 
