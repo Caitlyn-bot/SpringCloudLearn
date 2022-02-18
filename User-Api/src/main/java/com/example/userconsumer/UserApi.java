@@ -1,6 +1,8 @@
 package com.example.userconsumer;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @author 张志伟
@@ -12,4 +14,7 @@ public interface UserApi {
 
     @GetMapping("/getById")
     public String getById(Integer id);
+
+    @PostMapping("/postPserson")
+    public Person postPerson(@RequestBody Person person);
 }
